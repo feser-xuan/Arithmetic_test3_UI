@@ -152,12 +152,12 @@ public class MyExGUI extends JFrame{
 					if (!file.exists()) {
 			            // 创建文件
 			            try {
-			            	//System.out.println("文件夹:"+flag); 
+			            	
 			            	flag=file.createNewFile();
-							//System.out.println("文件夹:"+flag); 
+							
 						} catch (IOException e) {
 							e.printStackTrace();
-							//JOptionPane.showMessageDialog(null, "ERROR", "该文件名已存在，请重新输入", JOptionPane.ERROR_MESSAGE);
+							
 						}
 			            flag=false;
 			        }
@@ -275,18 +275,17 @@ public class MyExGUI extends JFrame{
 					if(res==JOptionPane.YES_OPTION){
 						chart ct =new chart(user_fenshu);
 						ct.setVisible(true);
-						//ct.paint(Graphics g);
-						//System.out.println("选择是后执行的代码");    //点击“是”后执行这个代码块
+						
 					}else{
 						Object[] option = { "是", "取消" }; 
 						int res1=JOptionPane.showOptionDialog(null, "继续新一轮答题", "新一轮答题", 
 						JOptionPane.DEFAULT_OPTION, JOptionPane.YES_NO_OPTION, 
 						null, option, option[0]); 
-						//System.out.println("选择否后执行的代码");    //点击“否”后执行这个代码块
+						
 						if(res1==JOptionPane.YES_OPTION){
 							arithmetic art = new arithmetic();
 							true_answer=art.list_answer;
-							//jta_timu = art.list_timu;
+							
 							jta_timu = art.list;
 							answer_count=1;
 							answer_all.setText("");
@@ -300,7 +299,7 @@ public class MyExGUI extends JFrame{
 							num_answer.setText("第 "+answer_count+" 题");	
 							jta.setText(jta_timu.get(answer_count-1));
 							answer_count++;
-							//System.out.println("选择是后执行的代码");    //点击“是”后执行这个代码块
+							
 						}else{
 							
 						}

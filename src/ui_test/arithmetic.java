@@ -32,16 +32,7 @@ public class arithmetic
 					e.printStackTrace();
 				}
 	        }
-			/*
-			Scanner sb = new Scanner(System.in); 
-			System.out.print("ÊäÈë²ÎÊýn£º");
-			try{
-				number_n = sb.nextInt();
-			}catch(Exception e){
-	            e.printStackTrace();
-	            return;
-	        }
-	        */
+			
 			
 			while(number_n>0)
 			{
